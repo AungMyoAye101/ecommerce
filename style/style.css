@@ -1,0 +1,104 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.head-link {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 1rem;
+  background-color: #f7f7f7;
+
+  border-bottom: 1px solid gray;
+}
+nav div input {
+  padding: 4px;
+  font-size: 12px;
+  border: 1px solid lightgray;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  outline-color: aqua;
+}
+.logo-title {
+  display: none;
+  color: black;
+  font-size: 1.4rem;
+}
+.input-con {
+  min-width: 120px;
+}
+.fa-magnifying-glass {
+  padding: 6px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-left: -4px;
+  color: white;
+  background-color: orangered;
+  cursor: pointer;
+}
+.cta {
+  gap: 10px;
+}
+.cta div {
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 300;
+  cursor: pointer;
+}
+/* mav link con */
+.nav-links ul li a {
+  color: gray;
+  padding: 2px 4px;
+  font-size: 12px;
+}
+.nav-links ul li a:hover {
+  color: violet;
+  text-decoration: underline;
+}
+.link-con {
+  display: none;
+}
+.fa-xmark {
+  font-size: 1.1rem;
+  display: none;
+}
+
+/* mobile link container */
+.mb-link-con {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  transform: translateX(120px);
+  transition: all 0.4s ease-out;
+}
+.mb-link-con ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  display: block;
+  width: 120px;
+  padding: 4px;
+  background-color: lightsalmon;
+  border-bottom: 1px solid gray;
+}
+.mb-link-con ul li a:hover {
+  background-color: skyblue;
+}
+.mb-link-con ul li a i {
+  margin-right: 10px;
+}
+
+/* responsive for nav bar  */
+@media only screen and (max-width: 768px) {
+  .logo,
+  .cta {
+    display: none;
+  }
+  .logo-title,
+  .mb-link-con,
+  .link-con {
+    display: block;
+  }
+}
