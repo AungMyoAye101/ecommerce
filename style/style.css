@@ -96,6 +96,7 @@ nav div input {
 
 /* hero section */
 .hero {
+  width: 100%;
   height: 100vh;
   background: linear-gradient(to right, #fff, #f7f7f7, #eeee);
   justify-content: space-between;
@@ -219,21 +220,59 @@ nav div input {
 
 /* zara ad section */
 .zara-ad {
-  width: 100vw;
-  height: 800px;
-  background: no-repeat url(../logo/zarabg.jpg);
+  width: 100%;
+
   color: white;
   position: relative;
+  background-color: black;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.zara-ad img {
+  width: 60%;
 }
 .ad-info {
-  position: absolute;
-  top: 30%;
-  right: 20%;
   max-width: 320px;
 }
 .ad-info p {
-  font-size: 1.2rem;
-  margin: 1.5rem 0;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+/* about section  */
+.about {
+  width: 100%;
+  padding: 1rem;
+}
+.about h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.img-slider {
+  width: 100vw;
+  overflow: hidden;
+}
+.about-img {
+  width: 40%;
+}
+/* Nav footer */
+.nav-footer {
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-footer div {
+  max-width: 200px;
+}
+/* footer  */
+footer {
+  background-color: #333;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 1rem;
 }
 
 /* responsive for nav bar  */
