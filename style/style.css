@@ -208,8 +208,32 @@ nav div input {
   font-size: 1.1rem;
   font-weight: 600;
 }
+.discount {
+  color: orangered;
+}
+
+/* zara ad section */
+.zara-ad {
+  width: 100vw;
+  height: 800px;
+  background: no-repeat url(../logo/zarabg.jpg);
+  color: white;
+  /* position: relative; */
+}
+.ad-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 320px;
+}
 
 /* responsive for nav bar  */
+@media only screen and (max-width: 1024px) {
+  .product-con {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .logo,
   .cta {
@@ -219,5 +243,13 @@ nav div input {
   .mb-link-con,
   .link-con {
     display: block;
+  }
+  .product-con {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 378px) {
+  .product-con {
+    grid-template-columns: 1fr;
   }
 }

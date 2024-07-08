@@ -1,8 +1,8 @@
-export const products = [
+const products = [
   {
     image: "./images/product-1.jpg",
     title: "Nike Repel Miler",
-    tpye: "Dress",
+    type: "Dress",
     price: 120.5,
     discount: 0,
     badge: "",
@@ -10,7 +10,7 @@ export const products = [
   {
     image: "./images/product-2.jpg",
     title: "Nike Sportswear Futura Luxe",
-    tpye: "Glasses",
+    type: "Glasses",
     price: 160.0,
     discount: 0,
     badge: "",
@@ -18,7 +18,7 @@ export const products = [
   {
     image: "./images/product-3.jpg",
     title: "Adicolor Classics Joggers",
-    tpye: "Dress",
+    type: "Dress",
     price: 63.85,
     discount: 0,
     badge: "HOT",
@@ -26,7 +26,7 @@ export const products = [
   {
     image: "./images/product-4.jpg",
     title: "Nike Sportswear Futura Luxe",
-    tpye: "Bag",
+    type: "Bag",
     price: 130.0,
     discount: 0,
     badge: "",
@@ -34,7 +34,7 @@ export const products = [
   {
     image: "./images/product-5.jpg",
     title: "Geometric print Scarf",
-    tpye: "scarf",
+    type: "scarf",
     price: 53.0,
     discount: 0,
     badge: "",
@@ -42,7 +42,7 @@ export const products = [
   {
     image: "./images/product-6.jpg",
     title: "Nike Air Zoom Pegasus",
-    tpye: "Shoe",
+    type: "Shoe",
     price: 220.0,
     discount: 198.0,
     badge: "SALE",
@@ -50,7 +50,7 @@ export const products = [
   {
     image: "./images/product-7.jpg",
     title: "Basic Dress Green",
-    tpye: "Dress",
+    type: "Dress",
     price: 236.0,
     discount: 0,
     badge: "",
@@ -58,9 +58,10 @@ export const products = [
   {
     image: "./images/product-8.jpg",
     title: "Yellow Reserved Hoodie",
-    tpye: "Dress",
+    type: "Dress",
     price: 364.0,
     discount: 155.0,
     badge: "SALE",
   },
 ];
+export default products;
