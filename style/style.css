@@ -7,16 +7,17 @@ header {
 .head-link {
   justify-content: space-between;
   align-items: center;
-  padding: 4px 2rem;
+  padding: 10px 2rem;
   background-color: #f7f7f7;
 }
 nav div input {
-  padding: 4px;
+  padding: 6px;
   font-size: 1rem;
   border: 1px solid lightgray;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   outline-color: aqua;
+  flex: 1;
 }
 .logo-title {
   display: none;
@@ -91,7 +92,7 @@ nav div input {
 /* hero section */
 .hero {
   height: 100vh;
-  background: #ffff;
+  background: linear-gradient(to right, #fff, #f7f7f7, #eeee);
   justify-content: space-between;
   padding: 2rem;
 }
@@ -99,18 +100,18 @@ nav div input {
   max-width: 500px;
 }
 .title-con h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .title-con p {
   font-size: 1.2rem;
   font-weight: 300;
+  margin: 1rem 0;
 }
 
 .title-con button {
   background-color: #333;
   color: white;
-  padding: 6px 10px;
-  margin-top: 12px;
+  padding: 10px 20px;
 }
 .title-con button i {
   margin-right: 4px;
@@ -138,7 +139,7 @@ nav div input {
 
   gap: 10px;
   padding: 1rem;
-  background-color: silver;
+  background-color: white;
 }
 .showcase-image-con img {
   width: 100%;
@@ -149,9 +150,63 @@ nav div input {
 }
 
 /* container section  */
+.container {
+  padding: 2rem 1rem;
+}
 .container h1 {
   text-align: center;
   font-size: 3rem;
+  margin-bottom: 2rem;
+  font-family: serif;
+  text-transform: uppercase;
+}
+/* Card section */
+.product-con {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.card {
+  background-color: #fff;
+  min-width: 300px;
+  padding: 8px;
+  border-radius: 8px;
+  position: relative;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px 12px;
+  background-color: salmon;
+  border-radius: 4px;
+}
+
+.product-info h2 {
+  width: 90%;
+  color: #333;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 1rem;
+}
+.info {
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: gray;
+}
+.price {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 /* responsive for nav bar  */
