@@ -3,12 +3,11 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  padding: 2rem;
 }
 .head-link {
   justify-content: space-between;
   align-items: center;
-  padding: 2px 0;
+  padding: 4px 2rem;
   background-color: #f7f7f7;
 }
 nav div input {
@@ -37,7 +36,7 @@ nav div input {
   cursor: pointer;
 }
 .cta {
-  gap: 10px;
+  gap: 1rem;
 }
 .cta div {
   font-size: 1.1rem;
@@ -48,7 +47,7 @@ nav div input {
 /* mav link con */
 .nav-links ul li a {
   color: gray;
-  padding: 4px 10px;
+  padding: 4px 1rem;
   font-size: 1rem;
 }
 .nav-links ul li a:hover {
@@ -92,12 +91,12 @@ nav div input {
 /* hero section */
 .hero {
   height: 100vh;
-
+  background: #ffff;
   justify-content: space-between;
   padding: 2rem;
 }
 .hero .title-con {
-  max-width: 300px;
+  max-width: 500px;
 }
 .title-con h1 {
   font-size: 3rem;
@@ -119,6 +118,40 @@ nav div input {
 /* image con */
 .img-con img {
   width: 300px;
+  margin-right: 100px;
+}
+
+/* brands container */
+.showcase-con {
+  background-color: #f7f7f7;
+  padding: 0 4rem;
+}
+.brand-con {
+  justify-content: space-between;
+  padding: 10px 1rem;
+  margin-bottom: 2rem;
+}
+/* images show case */
+.showcase-image-con {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  gap: 10px;
+  padding: 1rem;
+  background-color: silver;
+}
+.showcase-image-con img {
+  width: 100%;
+  border-radius: 10px;
+}
+.model {
+  grid-area: 1/1/3/3;
+}
+
+/* container section  */
+.container h1 {
+  text-align: center;
+  font-size: 3rem;
 }
 
 /* responsive for nav bar  */
