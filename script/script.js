@@ -34,6 +34,7 @@ const render = () => {
                 
                 </p>
               </div>
+            <button> Add to Cart</button>
             </div>
           </div>
     

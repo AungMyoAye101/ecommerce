@@ -7,17 +7,17 @@ header {
 .head-link {
   justify-content: space-between;
   align-items: center;
-  padding: 10px 2rem;
+  padding: 10px 1rem;
   background-color: #f7f7f7;
 }
 
 .logo-title {
   display: none;
   color: black;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .input-con {
-  min-width: 120px;
+  min-width: 60px;
   max-width: 600px;
   display: flex;
   flex: 1;
@@ -50,7 +50,19 @@ nav div input {
   font-weight: 300;
   cursor: pointer;
 }
-/* mav link con */
+.link-con {
+  font-size: 1.5rem;
+  display: none;
+}
+#close {
+  display: none;
+}
+/* nav link con */
+.nav-links ul {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
 .nav-links ul li a {
   color: gray;
   padding: 4px 1rem;
@@ -59,13 +71,6 @@ nav div input {
 .nav-links ul li a:hover {
   color: blue;
   text-decoration: underline;
-}
-.link-con {
-  display: none;
-}
-.fa-xmark {
-  font-size: 1.1rem;
-  display: none;
 }
 
 /* mobile link container */
@@ -131,13 +136,18 @@ nav div input {
 /* brands container */
 .showcase-con {
   background-color: #f7f7f7;
-  padding: 0 4rem;
+  padding: 0 1rem;
 }
 .brand-con {
   justify-content: space-between;
   padding: 10px 1rem;
   margin-bottom: 2rem;
+  width: 100%;
 }
+.brand-con img {
+  width: 20%;
+}
+
 /* images show case */
 .showcase-image-con {
   display: grid;
@@ -198,7 +208,7 @@ nav div input {
 .product-info h2 {
   width: 90%;
   color: #333;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -217,23 +227,34 @@ nav div input {
 .discount {
   color: orangered;
 }
+.card button {
+  background-color: goldenrod;
+  border-radius: 20px;
+  width: 100%;
+  margin: 10px 0;
+}
 
 /* zara ad section */
 .zara-ad {
   width: 100%;
-
+  height: 500px;
   color: white;
   position: relative;
   background-color: black;
   display: flex;
-  /* justify-content: space-between; */
+
   align-items: center;
 }
-.zara-ad img {
+.zara-img {
   width: 60%;
+  height: 100%;
 }
 .ad-info {
   max-width: 320px;
+  margin: 0 auto;
+}
+.zara-logo {
+  width: 100px;
 }
 .ad-info p {
   font-size: 1rem;
@@ -261,6 +282,7 @@ nav div input {
 .nav-footer {
   justify-content: space-between;
   padding: 1rem;
+  gap: 1rem;
 }
 .nav-footer div {
   max-width: 200px;
@@ -273,6 +295,20 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 4px 1rem;
+}
+
+/* social icons */
+.social-icons {
+  display: flex;
+  width: 100%;
+  font-size: 1.2rem;
+  gap: 10px;
+}
+.social-icons i:hover {
+  color: salmon;
+}
+.nav-footer div a {
+  color: black;
 }
 
 /* responsive for nav bar  */
@@ -294,6 +330,14 @@ footer {
   }
   .product-con {
     grid-template-columns: 1fr 1fr;
+  }
+  .zara-ad .zara-img {
+    display: none;
+  }
+  .zara-ad {
+    background: no-repeat url(../logo/zarabg.jpg);
+    background-position: center;
+    background-size: cover;
   }
 }
 @media only screen and (max-width: 378px) {
