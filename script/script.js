@@ -22,7 +22,7 @@ close.onclick = () => {
 const render = () => {
   products.map((item, i) => {
     productsCon.innerHTML += `
-        <div class="card">
+        <div class="card card-ani">
             <img src="${item.image}" alt="product image" />
        
             <div class="product-info">
@@ -42,3 +42,32 @@ const render = () => {
   });
 };
 render();
+
+// animation section
+ScrollReveal({
+  reset: true,
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+});
+
+ScrollReveal().reveal(".title-text , .zara-img", {
+  delay: 500,
+  origin: "left",
+});
+ScrollReveal().reveal(".para-text ", {
+  delay: 500,
+  origin: "top",
+});
+ScrollReveal().reveal(".btn-ani", { delay: 500, origin: "bottom" });
+ScrollReveal().reveal(".img-ani", { delay: 500, origin: "right" });
+ScrollReveal().reveal(".card-ani, .icons-ani", {
+  delay: 500,
+  origin: "bottom",
+  interval: 300,
+});
+ScrollReveal().reveal(".link-ani", {
+  delay: 500,
+  origin: "left",
+  interval: 300,
+});
