@@ -16,7 +16,7 @@ body {
 .flex-col {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 .flex-center {
   display: flex;
