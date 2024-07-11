@@ -232,6 +232,13 @@ nav div input {
   width: 100%;
   margin: 10px 0;
 }
+.add-btn {
+  padding: 4px 10px;
+  background-color: gold;
+  color: #222;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
 
 /* zara ad section */
 .zara-ad {

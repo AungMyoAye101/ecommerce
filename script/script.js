@@ -23,22 +23,20 @@ const render = () => {
   products.map((item, i) => {
     productsCon.innerHTML += `
         <div class="card card-ani">
-        <a href='${item.image}'> 
-      <img src="${item.image}" alt="product image" />
-        </a>
-      
-       
+          <a href='${item.image}'> 
+            <img src="${item.image}" alt="product image" />
+           </a>
+  ]
             <div class="product-info">
               <h2>${item.title}</h2>
               <div class="flex info">
                 <p class="type">${item.type}</p>
                 <p class="price">
-                  <span>${item.price} $</span>
-                
+                 ${item.price} 
                 </p>
               </div>
             
-                  <button> Add to Cart</button>
+                  <a href='#' class='add-btn'> Add to Cart</a>
               
         
             </div>
