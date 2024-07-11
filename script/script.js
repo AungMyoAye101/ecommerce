@@ -66,7 +66,7 @@ ScrollReveal().reveal(".card-ani, .icons-ani", {
   origin: "bottom",
   interval: 300,
 });
-ScrollReveal().reveal(".link-ani", {
+ScrollReveal().reveal(".link-ani, .about-img-ani", {
   delay: 500,
   origin: "left",
   interval: 300,

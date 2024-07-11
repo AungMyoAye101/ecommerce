@@ -236,7 +236,7 @@ nav div input {
 /* zara ad section */
 .zara-ad {
   width: 100%;
-  height: 500px;
+  height: 600px;
   color: white;
   position: relative;
   background-color: black;
@@ -276,6 +276,16 @@ nav div input {
 }
 .about-img {
   width: 40%;
+}
+/* about image */
+.about-img-con {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  gap: 12px;
+}
+.about-img-con img {
+  width: 25%;
 }
 /* Nav footer */
 .nav-footer {
