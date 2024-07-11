@@ -23,7 +23,10 @@ const render = () => {
   products.map((item, i) => {
     productsCon.innerHTML += `
         <div class="card card-ani">
-            <img src="${item.image}" alt="product image" />
+        <a href='${item.image}'> 
+      <img src="${item.image}" alt="product image" />
+        </a>
+      
        
             <div class="product-info">
               <h2>${item.title}</h2>
@@ -34,7 +37,10 @@ const render = () => {
                 
                 </p>
               </div>
-            <button> Add to Cart</button>
+            
+                  <button> Add to Cart</button>
+              
+        
             </div>
           </div>
     
