@@ -26,20 +26,16 @@ const render = () => {
           <a href='${item.image}'> 
             <img src="${item.image}" alt="product image" />
            </a>
-  ]
-            <div class="product-info">
+           <div class="product-info">
               <h2>${item.title}</h2>
-              <div class="flex info">
-                <p class="type">${item.type}</p>
-                <p class="price">
-                 ${item.price} 
+               <div class="flex info">
+                  <p class="type">${item.type}</p>
+                   <p class="price">
+                  ${item.price} 
                 </p>
+                 </div> 
               </div>
-            
-                  <a href='#' class='add-btn'> Add to Cart</a>
-              
-        
-            </div>
+             <a href='#' class='add-btn'> Add to Cart</a>
           </div>
     
     `;
