@@ -35,7 +35,7 @@ const render = () => {
                 </p>
                  </div> 
               </div>
-             <a href='#' class='add-btn'> Add to Cart</a>
+             <a href='../cart/cart.html' class='add-btn'> Add to Cart</a>
           </div>
     
     `;

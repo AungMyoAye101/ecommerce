@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="../style/utitily.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="./cart.css" />
+    <script
+      src="https://kit.fontawesome.com/e9675039d0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <header class="flex-col">
+      <nav class="flex head-link">
+        <div>
+          <a href="../index.html">
+            <img src="../logo/coralLogo.png" alt="logo" class="logo" />
+            <h1 class="logo-title">Coral</h1>
+          </a>
+        </div>
+
+        <div class="input-con">
+          <input type="text" placeholder="Search..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="flex cta">
+          <div>
+            <i class="fa-solid fa-user"></i>
+            <span>Account</span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Shop</span>
+          </div>
+        </div>
+        <!-- mobile nav link -->
+        <div class="link-con">
+          <i id="open" class="fa-solid fa-bars"></i>
+          <i id="close" class="fa-solid fa-xmark"></i>
+        </div>
+      </nav>
+
+      <nav id="mb-link" class="mb-link-con">
+        <ul>
+          <li>
+            <a href="#"> <i class="fa-solid fa-house"></i><span>Home</span> </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-circle-info"></i><span>About</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-bag-shopping"></i><span>Shopping</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-dollar-sign"></i><span>Payments</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-circle-user"></i><span>Account</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-envelope"></i><span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- link con -->
+      <nav class="nav-links">
+        <ul class="flex">
+          <li class="link-ani"><a href="#">Home</a></li>
+          <li class="link-ani"><a href="#">Shopping</a></li>
+          <li class="link-ani"><a href="#">Payments</a></li>
+          <li class="link-ani"><a href="#">Account</a></li>
+          <li class="link-ani"><a href="#">About</a></li>
+          <li class="link-ani"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- promotion section -->
+    <section class="hero">
+      <img src="../images/girl-shopping.jpg" alt="shopping" />
+    </section>
+    <script type="module" src="./cart.js"></script>
+  </body>
+</html>
